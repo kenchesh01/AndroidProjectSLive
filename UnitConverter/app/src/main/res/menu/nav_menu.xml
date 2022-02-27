@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/main_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item android:id="@+id/menu_area"
+        android:icon="@drawable/ic_area"
+        android:title="@string/area"/>
+        <item android:id="@+id/menu_currency"
+            android:icon="@drawable/ic_area"
+            android:title="@string/currency"/>
+
+    <item android:id="@+id/menu_Digital_Storage"
+        android:icon="@drawable/ic_digital"
+        android:title="@string/digital_storage"/>
+
+    <item android:id="@+id/menu_energy"
+        android:icon="@drawable/ic_energy"
+        android:title="@string/energy"/>
+
+    <item android:id="@+id/menu_force"
+        android:icon="@drawable/ic_force"
+        android:title="@string/force"/>
+
+    <item android:id="@+id/menu_Fuel_Economy"
+        android:icon="@drawable/ic_fuel"
+        android:title="@string/fuel_economy"/>
+
+    <item android:id="@+id/menu_frequency"
+        android:icon="@drawable/ic_frequency"
+        android:title="@string/frequency"/>
+
+    <item android:id="@+id/Length"
+        android:icon="@drawable/ic_length"
+        android:title="@string/length"/>
+
+    <item android:id="@+id/Mass"
+        android:icon="@drawable/ic_mass"
+        android:title="@string/mass"/>
+
+    <item android:id="@+id/Plane_Angle"
+        android:icon="@drawable/ic_plane_angle"
+        android:title="@string/plane_angle"/>
+
+    <item android:id="@+id/menu_power"
+        android:icon="@drawable/ic_power"
+        android:title="@string/power"/>
+
+    <item android:id="@+id/Pressure"
+        android:icon="@drawable/ic_pressure"
+        android:title="@string/pressure"/>
+
+    <item android:id="@+id/Speed"
+        android:icon="@drawable/ic_speed"
+        android:title="@string/speed"/>
+
+    <item android:id="@+id/Temperature"
+        android:icon="@drawable/ic_temperature"
+        android:title="@string/temperature"/>
+
+    <item android:id="@+id/Time"
+        android:icon="@drawable/ic_time"
+        android:title="@string/time"/>
+
+    <item android:id="@+id/Volume"
+        android:icon="@drawable/ic_volume"
+        android:title="@string/volume"/>
+
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings"/>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rating"
+                android:title="@string/rate" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/refer" />
+
+            <item android:id="@+id/nav_apps"
+                android:icon="@drawable/ic_more"
+                android:title="@string/more"/>
+        </menu>
+    </item>
+
+</menu>

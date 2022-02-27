@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReturnModule1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/margin"
+        android:scrollbarStyle="insideOverlay"
+        ads:layout_constraintTop_toBottomOf="@id/ad_view_container">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/key_in_your_information"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/label_1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/label_amount_invested"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input1"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@id/activity_label" />
+
+            <EditText
+                android:id="@+id/user_input1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:text="@string/text_amount_invested"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintBaseline_toBaselineOf="@+id/label_1"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/label_1" />
+
+            <TextView
+                android:id="@+id/label_2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/label_amount_returned"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input2"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@id/label_1" />
+
+            <EditText
+                android:id="@+id/user_input2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:text="@string/text_amount_returned"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/label_2"
+                ads:layout_constraintTop_toBottomOf="@id/user_input1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@id/radio_text1"
+                ads:layout_constraintTop_toBottomOf="@id/label_2">
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radio_text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/label_options"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold"
+                ads:layout_constraintEnd_toStartOf="@id/user_input2"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@+id/label_2" />
+
+            <TextView
+                android:id="@+id/label_3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/label_total_income"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                android:visibility="gone"
+                ads:layout_constraintBaseline_toBaselineOf="@id/user_input3"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input3"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@+id/radio_text1" />
+
+            <EditText
+                android:id="@+id/user_input3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:text="@string/text_total_income"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                android:visibility="gone"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/label_3"
+                ads:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+            <TextView
+                android:id="@+id/label_4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/label_total_expense"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                android:visibility="gone"
+                ads:layout_constraintBaseline_toBaselineOf="@id/user_input4"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input4"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@+id/label_3" />
+
+            <EditText
+                android:id="@+id/user_input4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:text="@string/text_total_expense"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                android:visibility="gone"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/label_4"
+                ads:layout_constraintTop_toBottomOf="@id/user_input3" />
+
+            <TextView
+                android:id="@+id/label_5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/label_investment_term"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintBaseline_toBaselineOf="@id/user_input5"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input5"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@+id/label_4" />
+
+            <EditText
+                android:id="@+id/user_input5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="@string/text_investment_term"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/label_5"
+                ads:layout_constraintTop_toBottomOf="@id/user_input4" />
+
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/dark_green"
+                ads:backgroundTint="@color/dark_green"
+                android:text="@string/button_calculate"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@id/reset"
+                ads:layout_constraintStart_toStartOf="@id/activity_label"
+                ads:layout_constraintTop_toBottomOf="@id/label_5" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/red"
+                ads:backgroundTint="@color/red"
+                android:text="@string/button_reset"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body"
+                ads:layout_constraintBaseline_toBaselineOf="@+id/button_calculate"
+                ads:layout_constraintEnd_toEndOf="@id/activity_label"
+                ads:layout_constraintStart_toEndOf="@+id/button_calculate"
+                ads:layout_constraintTop_toBottomOf="@id/user_input5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

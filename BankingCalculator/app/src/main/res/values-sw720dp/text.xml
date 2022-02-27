@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">40sp</dimen>
+    <dimen name="heading">36sp</dimen>
+    <dimen name="body">30sp</dimen>
+    <dimen name="quote">24sp</dimen>
+    <dimen name="margin">95dp</dimen>
+    <dimen name="icon">90dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="table_width">70dp</dimen>
+    <dimen name="table_height">50dp</dimen>
+</resources>

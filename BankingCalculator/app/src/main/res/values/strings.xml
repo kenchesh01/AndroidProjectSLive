@@ -1,0 +1,154 @@
+<resources>
+    <!-- Common UI Resource -->
+    <string name="app_name">Banking Calculator</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home_page">Home</string>
+    <string name="calculator_savings">Savings Calculator</string>
+    <string name="calculator_CD">Certificate Deposit Calculator</string>
+    <string name="calculator_goal">Savings Goal Calculator</string>
+    <string name="calculator_investment">Investment Calculator</string>
+    <string name="calculator_loan">Loan Calculator</string>
+    <string name="rate">Rate this app</string>
+    <string name="refer">Refer this app</string>
+    <string name="more">More apps from us</string>
+    <string name="label_information">Key in your information:</string>
+    <string name="amortization_schedule">Amortization Schedule</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_save">Save</string>
+    <string name="button_share">Share</string>
+    <string name="button_compare">Compare</string>
+    <string name="button_amortization">Amortization</string>
+    <string name="communicate">Communicate</string>
+    <string name="purchase">Buy the app (Remove Ads) </string>
+    <string name="hint">Enter Numeric Value</string>
+    <string name="your_comparative_result">Comparative Results</string>
+    <string name="description">Description</string>
+    <string name="result_1">Result#1</string>
+    <string name="result_2">Result#2</string>
+    <string name="deposit">Deposit</string>
+    <string name="savings">Savings</string>
+    <string name="goal"> Savings Goal</string>
+    <string name="label_principal">Principal</string>
+    <string name="label_interest">Interest</string>
+
+    <!-- UI Resource for Main Activity - Launcher Screen -->
+    <string name="app_message">Select a Calculator</string>
+
+
+    <!-- UI Resource for CD Calculator -->
+    <string name="add_deposit">Add Another CD To Compare</string>
+    <string name="label_initial_deposit">Initial Deposit:</string>
+    <string name="label_deposit_term">Term (Months):</string>
+    <string name="label_annual_interest">Annual Interest (%):</string>
+    <string name="label_compounding_type">Compounding Type:</string>
+    <string name="compounding_prompt">Select</string>
+    <string name="label_tax_rate">Tax Rate (%):</string>
+    <string name="label_deposit_module2">Estimated CD Balance:</string>
+    <string name="label_maturity_value">Maturity Value:</string>
+    <string name="label_interest_earned">Interest Earned:</string>
+    <string name="label_APY">APY:</string>
+    <string name="label_tax_interest">Tax on Interest:</string>
+    <string name="label_interest_tax">Interest After Tax:</string>
+    <string name="label_net_maturity">Net Maturity:</string>
+
+    <!-- UI Resource for Savings Calculator -->
+    <string name="add_savings">Add Another Savings To Compare</string>
+
+    <string name="label_savings_module2">Estimated Savings Balance:</string>
+    <!-- UI Resource for Savings Goal Calculator -->
+    <string name="label_savings_goal">Savings Goal:</string>
+    <string name="label_savings_term">Term (Months):</string>
+    <string name="add_goal">Add Another Goal To Compare</string>
+    <string name="label_first_deposit">First Deposit:</string>
+    <string name="label_time_save">Time to Save (Months):</string>
+    <string name="label_goal_module2">To Reach Your Goal:</string>
+    <string name="label_required_deposit">Monthly Deposit Required:</string>
+    <string name="label_deposit">Required Deposit:</string>
+    <string name="label_monthly_deposit">Monthly Deposit:</string>
+    <string name="total_deposits">Total Deposits:</string>
+    <string name="total_savings">Total Savings:</string>
+
+    <!-- UI Resource for Return on Investment Goal Calculator -->
+    <string name="investment">Investment</string>
+    <string name="label_amount_invested">Amount Invested</string>
+    <string name="label_amount_returned">Amount Returned</string>
+    <string name="label_investment_term">Investment Length (Year)</string>
+    <string name="label_total_income">Total Income</string>
+    <string name="label_total_expense">Total Expense</string>
+    <string name="label_ROI_result">Estimated return on Investment</string>
+    <string name="label_net_return">Net Gain / Loss</string>
+    <string name="label_ROI">Return on Investment</string>
+    <string name="label_annualized_ROI">Annualized ROI</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="label_options">Optional</string>
+    <string name="text_total_income">0</string>
+    <string name="text_total_expense">0</string>
+    <string name="text_amount_returned">12500</string>
+    <string name="text_investment_term">2</string>
+    <string name="text_amount_invested">10000</string>
+    <string name="key_in_your_information">Key in your information</string>
+    <string name="label_return_summary">Return Summary</string>
+
+    <!-- UI Resource for Loan Module -->
+    <string name="loan_label1">Loan Amount</string>
+    <string name="loan_label2">Loan Term (Months)</string>
+    <string name="loan_label3">Rate of Interest (%)</string>
+    <string name="loan_activity_label">Estimated Loan Payments</string>
+    <string name="loan_result_label1">Monthly Payment</string>
+    <string name="loan_result_label2">Total Principal Paid</string>
+    <string name="loan_result_label3">Total Interest Paid</string>
+    <string name="loan_result_label4">Total Loan Payments</string>
+    <string name="label_personal_compare">Add another loan</string>
+    <string name="label_payment_break">Payment Breakdown:</string>
+    <string name="net_return">Net Return</string>
+    <string name="interest">Interest</string>
+    <string name="principal">Principal</string>
+
+
+    <!-- UI Resource for Currency Module -->
+    <string name="currency">Currency</string>
+    <string name="currency_converter">Currency converter</string>
+    <string name="convert_from">Convert From</string>
+    <string name="convert_to">Convert To</string>
+    <string name="major_currencies">Major Currencies</string>
+    <string name="usd_eur">USD/EUR</string>
+    <string name="usd_jpy">USD/JPY</string>
+    <string name="usd_gbp">USD/GBP</string>
+    <string name="usd_cad">USD/CAD</string>
+    <string name="usd_cny">USD/CNY</string>
+    <string name="usd_aud">USD/AUD</string>
+    <string name="usd_hkd">USD/HKD</string>
+    <string name="usd_inr">USD/INR</string>
+    <string name="usd_krw">USD/KRW</string>
+    <string name="usd_rub">USD/RUB</string>
+    <string name="custom_text">Custom Text</string>
+    <string name="enter_amount">Enter Amount</string>
+
+    <!-- UI Resource for Admob Banner ID -->
+    <!-- -
+              This is an ad unit ID for a banner test ad.
+                Google Banner ID: ca-app-pub-3940256099942544/6300978111
+          <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!-- -
+    // Google Test ID: ca-app-pub-3940256099942544/1033173712
+    <!- -->
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="maturity_value">Maturity Value</string>
+    <string name="inflation_rate">Inflation Rate (%)</string>
+    <string name="deposit_term_years">Deposit Term (Years)</string>
+    <string name="tax_rate">Tax Rate (%)</string>
+
+
+    // Array list for Deposit Module 1
+    <string-array name="compounding_arrays">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Semi-Annually</item>
+        <item>Annually</item>
+    </string-array>
+</resources>

@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositModule5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="#ffffff"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintHorizontal_bias="0.5"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/margin"
+        android:scrollbarStyle="insideOverlay"
+        ads:layout_constraintTop_toBottomOf="@id/ad_banner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/your_comparative_result"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/title"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TableLayout
+                android:id="@+id/Table"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/activity_label">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/heading_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill_vertical"
+                        android:text="@string/description"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@+id/heading_2"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/heading_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/result_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@id/heading_3"
+                        ads:layout_constraintStart_toEndOf="@+id/heading_1" />
+
+                    <TextView
+                        android:id="@+id/heading_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/result_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/heading_2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_initial_deposit"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/initial_deposit_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/initial_deposit_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/initial_deposit_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_1" />
+
+                    <TextView
+                        android:id="@+id/initial_deposit_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/initial_deposit_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_deposit_term"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/deposit_term_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/deposit_term_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/deposit_term_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_2" />
+
+                    <TextView
+                        android:id="@+id/deposit_term_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/deposit_term_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_annual_interest"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/rate_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/rate_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/rate_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_3" />
+
+                    <TextView
+                        android:id="@+id/rate_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/rate_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_compounding_type"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/compounding_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/compounding_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/compounding_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_4" />
+
+                    <TextView
+                        android:id="@+id/compounding_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/compounding_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_tax_rate"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/rate_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/tax_rate_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/tax_rate_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_5" />
+
+                    <TextView
+                        android:id="@+id/tax_rate_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/tax_rate_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" />
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/label_deposit_module2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_deposits"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/total_payments_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/total_payments_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/total_payments_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_6" />
+
+                    <TextView
+                        android:id="@+id/total_payments_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/total_payments_result1" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_interest_earned"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/total_interest_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/total_interest_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/total_interest_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_7" />
+
+                    <TextView
+                        android:id="@+id/total_interest_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/total_interest_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_maturity_value"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/maturity_value_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/maturity_value_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/maturity_value_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_8" />
+
+                    <TextView
+                        android:id="@+id/maturity_value_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/maturity_value_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_APY"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/APY_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/APY_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/APY_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_9" />
+
+                    <TextView
+                        android:id="@+id/APY_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/APY_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_tax_interest"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/tax_interest_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/tax_interest_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/total_interest_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_10" />
+
+                    <TextView
+                        android:id="@+id/tax_interest_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/tax_interest_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_interest_tax"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/interest_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/interest_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/interest_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_11" />
+
+                    <TextView
+                        android:id="@+id/interest_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/interest_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_net_maturity"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/net_maturity_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/net_maturity_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/net_maturity_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_12" />
+
+                    <TextView
+                        android:id="@+id/net_maturity_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/net_maturity_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp" />
+            </TableLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,462 @@
+<resources>
+    <!-- Common Strings   <!-->
+    <string name="app_name">Unit Converter</string>
+    <string name="app_message">Select a converter</string>
+    <string name="share">share</string>
+    <string name="select">Select a unit from the list</string>
+
+    <!-- -   Navigation Menu    <!- -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="area">Area</string>
+    <string name="digital_storage">Digital Storage</string>
+    <string name="energy">Energy</string>
+    <string name="force">Force</string>
+    <string name="frequency">Frequency</string>
+    <string name="fuel_economy">Fuel Economy</string>
+    <string name="length">Length</string>
+    <string name="mass">Mass</string>
+    <string name="plane_angle">Plane Angle</string>
+    <string name="power">Power</string>
+    <string name="pressure">Pressure</string>
+    <string name="speed">Speed</string>
+    <string name="temperature">Temperature</string>
+    <string name="time">Time</string>
+    <string name="volume">Volume</string>
+    <string name="communicate">Communicate</string>
+    <string name="rate">Rate this app</string>
+    <string name="refer">Refer this app</string>
+    <string name="more">More apps from us</string>
+
+    <!-- Area item lists <!-->
+    <string name="area_converter">Area Converter</string>
+    <string name="acre"> Acre (ac)</string>
+    <string name="hectare"> Hectare (ha)</string>
+    <string name="square_centimeter">Square Centimeter (cm2)</string>
+    <string name="square_decimeters">Square Decimeters (dm2)</string>
+    <string name="square_foot">Square Foot (ft2)</string>
+    <string name="square_inch">Square Inch (in2)</string>
+    <string name="square_kilometer">Square Kilometer (km2)</string>
+    <string name="square_meter">Square Meter (m2)</string>
+    <string name="square_mile">Square Mile (mi2)</string>
+    <string name="square_millimeter">Square Millimeter (mm2)</string>
+    <string name="square_yard">Square Yard (yd2)</string>
+    <string name="digital_storage_converter">Digital Storage Converter</string>
+
+    <!-- Digital Storage Converter <!-->
+    <string name="bit_b">Bit (b)</string>
+    <string name="byte_b">Byte (B)</string>
+    <string name="kilobyte_kb">Kilobyte (kB)</string>
+    <string name="kilo_bit_kb">Kilobit (kb)</string>
+    <string name="megabit_mb">Megabit (Mb)</string>
+    <string name="megabyte_mb">Megabyte (MB)</string>
+    <string name="gigabit_gb">Gigabit (Gb)</string>
+    <string name="gigabyte_gb">Gigabyte (GB)</string>
+    <string name="tera_bit_tb">Terabit (Tb)</string>
+    <string name="terabyte_tb">Terabyte (TB)</string>
+    <string name="peta_bit_pb">Petabit (Pb)</string>
+    <string name="peta_byte_pb">Petabyte (PB)</string>
+    <string name="pebi_bit_pib">Pebibit (Pib)</string>
+    <string name="pebi_byte_pib">Pebibyte (PiB)</string>
+
+
+    <!-- Energy Converter <!-->
+    <string name="joule_j">Joule (J)</string>
+    <string name="kilo_joule_kj">Kilo joule (kJ)</string>
+    <string name="calorie_cal">Gram Calorie (cal)</string>
+    <string name="kilo_calorie_kcal">Kilo calorie (Kcal)</string>
+    <string name="watt_hour_kw_h">Watt hour (KW-h)</string>
+    <string name="kilowatt_hour_kw_h">Kilowatt hour (KW-h)</string>
+    <string name="electron_volt_ev">Electron volt (eV)</string>
+    <string name="erg_erg">Erg (erg)</string>
+    <string name="british_thermal_unit_btu">British thermal unit (Btu)</string>
+    <string name="us_therm_therm">US Therm (therm)</string>
+    <string name="inch_pound_in_lb">Inch-pound (in-lb)</string>
+    <string name="foot_pound_ft_lb">Foot-pound (ft-lb)</string>
+    <string name="force_converter">Force Converter</string>
+    <string name="dyne_dyn">Dyne (dyn)</string>
+    <string name="newton_n">Newton (N)</string>
+
+    <!-- Force Converter <!-->
+    <string name="deka_newton_dan">DeKa Newton (daN)</string>
+    <string name="kilonewton_kn">KiloNewton (kN)</string>
+    <string name="gram_force_gf">Gram-force (gf)</string>
+    <string name="kilogram_force_kgf">Kilogram-force (kgf)</string>
+    <string name="pound_force_ibf">Pound-force (ibf)</string>
+    <string name="kip_force_kipf">Kip-force (kipf)</string>
+    <string name="frequency_converter">Frequency Converter</string>
+    <string name="gigahertz_ghz">Gigahertz (GHz)</string>
+    <string name="megahertz_mhz">Megahertz (MHz)</string>
+    <string name="kilohertz_khz">Kilohertz (kHz)</string>
+
+    <!-- Frequency Converter<!-->
+    <string name="hertz_hz">Hertz (Hz)</string>
+    <string name="fuel_economy_converter">Fuel Economy Converter</string>
+    <string name="miles_per_gallon_mi_gal_uk">Miles per gallon (mi/gal - UK)</string>
+    <string name="miles_per_gallon_mi_gal_us">Miles per gallon (mi/gal-US)</string>
+    <string name="liter_per_100_kilometers_l_km">Liter Per 100 kilometers (L/km)</string>
+    <string name="length_converter">Length Converter</string>
+
+    <!-- Fuel Economy converter <!-->
+    <string name="kilometer_per_liter_km_l">Kilometer per liter (km/L)</string>
+    <string name="kilometer_km">Kilometer (km)</string>
+    <string name="meter_m">Meter (m)</string>
+    <string name="centimeter_cm">Centimeter (cm)</string>
+    <string name="millimeter_mm">Millimeter (mm)</string>
+
+    <!--Length Converter <!-->
+    <string name="micrometer_m">Micrometer (μm)</string>
+    <string name="nanometer_nm">Nanometer (nm)</string>
+    <string name="mile_mi">Mile (mi)</string>
+    <string name="yard_yd">Yard (yd)</string>
+    <string name="foot_ft">Foot (ft)</string>
+    <string name="inch_in">Inch (in)</string>
+    <string name="nautical_mile_nm">Nautical Mile (NM)</string>
+
+    <!-- Mass Converter <!-->
+    <string name="mass_converter">Mass Converter</string>
+    <string name="metric_ton_t">Metric Ton (t)</string>
+    <string name="kilogram_kg">Kilogram (kg)</string>
+    <string name="gram_g">Gram (g)</string>
+    <string name="milligram_mg">Milligram (mg)</string>
+    <string name="micro_gram_g">Microgram (μg)</string>
+    <string name="short_ton_t_us">Short ton (t – US)</string>
+    <string name="long_ton_t_uk">Long Ton (t – UK)</string>
+    <string name="stone_st_uk">Stone (st -UK)</string>
+    <string name="pound_lbs">Pound (lbs)</string>
+    <string name="ounces_oz">Ounces (oz)</string>
+
+
+    <!-- Plane angle Converter <!-->
+    <string name="plane_angle_converter">Plane Angle Converter</string>
+    <string name="degree_o">Degree (o)</string>
+    <string name="gradian_g">Gradian/Gon (^g)</string>
+    <string name="milliradian">MilliRadian</string>
+    <string name="minute_of_arc">Minute of arc</string>
+    <string name="radian_rad">Radian (rad)</string>
+    <string name="second_of_arc">Second of arc</string>
+    <string name="turn">Turn</string>
+
+    <!-- power Converter <!-->
+    <string name="power_converter">Power Converter</string>
+    <string name="watt">Watt (W)</string>
+    <string name="kilowatt">Kilowatt (kW)</string>
+    <string name="megawatt">Megawatt (MW)</string>
+    <string name="kilocalorie_second">Kilocalorie/second (Kcal/s)</string>
+    <string name="kilocalorie_hour">Kilocalorie/hour (Kcal/h)</string>
+    <string name="horsepower">Horsepower (hp)</string>
+    <string name="british_thermal_unit_hour">British thermal unit/hour (Btu/h)</string>
+    <string name="Ton_of_refrigeration">Ton of refrigeration (TR)</string>
+    <string name="calorie_second">Calorie/second (cal/s)</string>
+
+    <!-- Pressure Converter <!-->
+    <string name="pressure_converter">Pressure Converter</string>
+    <string name="bar">Bar</string>
+    <string name="pascal_pa">Pascal (Pa)</string>
+    <string name="hectopascal_hpa">HectoPascal (hPa)</string>
+    <string name="kilopascal_kpa">KiloPascal (kPa)</string>
+    <string name="megapascal_mpa">MegaPascal (MPa)</string>
+    <string name="psi_psi">PSI (psi)</string>
+    <string name="ksi_ksi">KSI (ksi)</string>
+    <string name="pound_force_per_squarefoot">Pound-force per SquareFoot</string>
+    <string name="standard_atmosphere_atm">Standard atmosphere (atm)</string>
+    <string name="torr_torr">Torr (Torr)</string>
+
+    <!-- Speed Converter <!-->
+    <string name="speed_converter">Speed converter</string>
+    <string name="miles_per_hour_mph">Mile per hour (mph)</string>
+    <string name="mile_per_minute_mi_min">Mile per minute (mi/min)</string>
+    <string name="mile_per_second_mi_s">Mile per second (mi/s)</string>
+    <string name="kilometer_per_hour_kph">Kilometer per hour (kph)</string>
+    <string name="kilometer_per_minute_km_min">Kilometer per minute (km/min)</string>
+    <string name="kilometer_per_second_km_s">Kilometer per second (km/s)</string>
+    <string name="foot_per_second_ft_s">Foot per second (ft/s)</string>
+    <string name="meter_per_second_m_s">Meter per second (m/s)</string>
+    <string name="meter_per_minute_m_min">Meter per minute  (m/min)</string>
+    <string name="knot">Knot</string>
+    <string name="meter_per_hour_m_h">Meter per hour (m/h)</string>
+
+    <!-- Temperature Converter <!-->
+    <string name="temperature_converter">Temperature Converter</string>
+    <string name="celsius_c">Celsius (C)</string>
+    <string name="fahrenheit_f">Fahrenheit (F)</string>
+    <string name="kelvin_k">Kelvin (K)</string>
+
+    <!-- Time Converter <!-->
+    <string name="time_converter">Time Converter</string>
+    <string name="nanosecond">Nanosecond</string>
+    <string name="microsecond">Microsecond</string>
+    <string name="millisecond_ms">Millisecond (ms)</string>
+    <string name="second_s">Second (s)</string>
+    <string name="minute_min">Minute (min)</string>
+    <string name="hour_h">Hour (h)</string>
+    <string name="day_d">Day (d)</string>
+    <string name="week_wk">Week (wk)</string>
+    <string name="month_m">Month (m)</string>
+    <string name="year_y">Year (y)</string>
+
+    <!-- Volume Converter <!-->
+    <string name="volume_converter">Volume Converter</string>
+    <string name="milliliter_ml">Milliliter (mL)</string>
+    <string name="liter_l">Liter (L)</string>
+    <string name="cubic_meter_m3">Cubic meter (m3)</string>
+    <string name="cubic_inch_in3">Cubic inch (in3)</string>
+    <string name="cubic_foot_ft3">Cubic foot (ft3)</string>
+    <string name="cubic_yard_yd3">Cubic yard (yd3)</string>
+    <string name="fluid_ounce_us_fl_oz">Fluid ounce - US (fl oz)</string>
+    <string name="fluid_ounce_uk_fl_oz">Fluid ounce - UK (fl oz)</string>
+    <string name="cup_us_c">Cup - US (c)</string>
+    <string name="cup_c">Cup (c)</string>
+    <string name="pint_liquid_us_pt">Pint, liquid -US (pt)</string>
+    <string name="pint_liquid_uk_pt">Pint, liquid -UK (pt)</string>
+    <string name="quart_liquid_us_qt">Quart, liquid - US (qt)</string>
+    <string name="quart_liquid_uk_qt">Quart, liquid - UK (qt)</string>
+    <string name="gallon_us_gal">Gallon – US (gal)</string>
+    <string name="gallon_uk_gal">Gallon – UK (gal)</string>
+    <string name="barrel_us_bbl">Oil Barrel (bbl)</string>
+    <!-- currency converter <!-->
+    <string name="aud_australian_dollar">AUD-Australian Dollar</string>
+    <string name="cad_canadian_dollars">CAD-Canadian Dollar</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="inr_indian_rupee">INR-Indian Rupee</string>
+    <string name="usd_united_states_dollar">USD-United States Dollar</string>
+    <string name="eur_euro">EUR-Euro</string>
+    <string name="jpy_japanese_yen">JPY-Japanese Yen</string>
+    <string name="gbp_british_pound_sterling">GBP-British Pound Sterling</string>
+    <string name="chf_swiss_franc">CHF-Swiss Franc</string>
+    <!-- My App Settings<!-->
+    <string name="settings">Settings</string>
+    <string name="prefs_theme_key">theme</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="your_local_weather">Your Local Weather</string>
+    <string name="currency_converter">Currency converter</string>
+    <string name="country_regions">country regions</string>
+    <string name="convert_from">Convert From</string>
+    <string name="convert_to">Convert To</string>
+    <string name="amount_to_convert">Amount to convert</string>
+    <string name="conversion_rate">Conversion rate</string>
+    <string name="major_currencies">Major Currencies</string>
+    <string name="usd_eur">USD/EUR</string>
+    <string name="usd_jpy">USD/JPY</string>
+    <string name="usd_gbp">USD/GBP</string>
+    <string name="usd_cad">USD/CAD</string>
+    <string name="usd_cny">USD/CNY</string>
+    <string name="usd_aud">USD/AUD</string>
+    <string name="usd_hkd">USD/HKD</string>
+    <string name="usd_inr">USD/INR</string>
+    <string name="usd_krw">USD/KRW</string>
+    <string name="usd_rub">USD/RUB</string>
+    <string name="custom_text">Custom Text</string>
+    <string name="location">Location</string>
+    <string name="_0_c">0*C</string>
+    <string name="slash">/</string>
+    <string name="_0_f">0*F</string>
+    <string name="space">-----</string>
+    <string name="brown">Brown</string>
+    <string name="black">Black</string>
+    <string name="blue">Blue</string>
+    <string name="gray">Gray</string>
+    <string name="green">Green</string>
+    <string name="currency">Currency</string>
+
+    <string-array name="spinner_area_items">
+        <item>Acre (ac)</item>
+        <item>Hectare (ha)</item>
+        <item>Square Centimeter (cm2)</item>
+        <item>Square Decimeters (dm2)</item>
+        <item>Square Foot (ft2)</item>
+        <item>Square Inch (in2)</item>
+        <item>Square Kilometer (km2)</item>
+        <item>Square Meter  (m2) </item>
+        <item>Square Mile (mi2)</item>
+        <item>Square Millimeter (mm2)</item>
+        <item>Square Yard (yd2)</item>
+    </string-array>
+    <string-array name="spinner_storage_items">
+        <item>Bit (b)</item>
+        <item>Byte (B)</item>
+        <item>Kilobyte (kB)</item>
+        <item>Kilobit (kb)</item>
+        <item>Megabit (Mb)</item>
+        <item>Megabyte (MB)</item>
+        <item>Gigabit (Gb)</item>
+        <item>Gigabyte (GB) </item>
+        <item>Terabit (Tb)</item>
+        <item>Terabyte (TB)</item>
+        <item>Petabit (Pb)</item>
+        <item>Petabyte (PB)</item>
+        <item>Pebibit (Pib)</item>
+        <item>Pebibyte (PiB) </item>
+    </string-array>
+    <string-array name="spinner_Energy_items">
+        <item>Joule (J)</item>
+        <item>Kilo joule (kJ)</item>
+        <item>Gram Calorie (cal)</item>
+        <item>Kilo calorie (Kcal)</item>
+        <item>Watt hour (KW-h)</item>
+        <item>Kilowatt hour (KW-h)</item>
+        <item>Electron volt (eV)</item>
+        <item>Erg (erg)</item>
+        <item>British thermal unit (Btu)</item>
+        <item>US Therm (therm)</item>
+        <item>Inch-pound (in-lb)</item>
+        <item>Foot-pound (ft-lb)</item>
+    </string-array>
+    <string-array name="spinner_force_items">
+        <item>Dyne (dyn)</item>
+        <item>Newton (N)</item>
+        <item>DeKaNewton (daN)</item>
+        <item>KiloNewton (kN)</item>
+        <item>Gram-force (gf)</item>
+        <item>Kilogram-force (kgf)</item>
+        <item>Pound-force (ibf)</item>
+        <item>Kip-force (kipf)</item>
+    </string-array>
+    <string-array name="spinner_frequency_items">
+        <item>Hertz (Hz)</item>
+        <item>Kilohertz (kHz)</item>
+        <item>Megahertz (MHz)</item>
+        <item>Gigahertz (GHz)</item>
+    </string-array>
+    <string-array name="spinner_fuel_items">
+        <item>Kilometer per liter (km/L)</item>
+        <item>Liter per 100 kilometers (L/km)</item>
+        <item>Miles per gallon (mi/gal - US)</item>
+        <item>Miles per gallon (mi/gal - UK)</item>
+    </string-array>
+    <string-array name="spinner_length_items">
+        <item>Kilometer (km)</item>
+        <item>Meter (m)</item>
+        <item>Centimeter (cm)</item>
+        <item>Millimeter (mm)</item>
+        <item>Micrometer (μm)</item>
+        <item>Nanometer (nm)</item>
+        <item>Mile (mi)</item>
+        <item>Yard (yd)</item>
+        <item>Foot (ft)</item>
+        <item>Inch (in)</item>
+        <item>Nautical Mile (NM)</item>
+    </string-array>
+    <string-array name="spinner_Mass_items">
+        <item>Metric Ton (t)</item>
+        <item>Kilogram (kg)</item>
+        <item>Gram (g)</item>
+        <item>Milligram (mg)</item>
+        <item>Microgram (μg)</item>
+        <item>Short ton (t – US)</item>
+        <item>Long Ton (t – UK)</item>
+        <item>Stone (st -UK)</item>
+        <item>Pound (lbs)</item>
+        <item>Ounces (oz)</item>
+    </string-array>
+    <string-array name="spinner_plane_angle_items">
+        <item>Degree (o)</item>
+        <item>Gradian/Gon (^g)</item>
+        <item>MilliRadian</item>
+        <item>Minute of arc</item>
+        <item>Radian (rad) </item>
+        <item>Second of arc</item>
+        <item>Turn</item>
+    </string-array>
+    <string-array name="spinner_power_items">
+        <item>Watt (W)</item>
+        <item>Kilowatt (kW)</item>
+        <item>Megawatt (MW)</item>
+        <item>Kilocalorie/second (Kcal/s)</item>
+        <item>Kilocalorie/hour (Kcal/h)</item>
+        <item>Horsepower (hp)</item>
+        <item>British thermal unit/hour (Btu/h)</item>
+        <item>Ton of refrigeration (TR)</item>
+        <item>Calorie/second (cal/s)</item>
+    </string-array>
+    <string-array name="spinner_pressure_items">
+        <item>Bar</item>
+        <item>Pascal (Pa)</item>
+        <item>HectoPascal (hPa)</item>
+        <item>KiloPascal (kPa)</item>
+        <item>MegaPascal (MPa)</item>
+        <item>PSI (psi)</item>
+        <item>KSI (ksi)</item>
+        <item>Pound-force per SquareFoot</item>
+        <item>Standard atmosphere (atm)</item>
+        <item>Torr (Torr)</item>
+    </string-array>
+    <string-array name="spinner_speed_items">
+        <item>Mile per hour (mph)</item>
+        <item>Mile per minute (mi/min)</item>
+        <item>Mile per second (mi/s)</item>
+        <item>Kilometer per hour (kph)</item>
+        <item>Kilometer per minute (km/min)</item>
+        <item>Kilometer per second (km/s)</item>
+        <item>Foot per second (ft/s)</item>
+        <item>Meter per second (m/s) </item>
+        <item>Meter per minute (m/min)</item>
+        <item>Meter per hour (m/h)</item>
+        <item>Knot</item>
+    </string-array>
+
+
+    <string-array name="spinner_temperature_items">
+        <item>Celsius (C)</item>
+        <item>Fahrenheit (F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+
+    <string-array name="spinner_time_items">
+        <item>Nanosecond</item>
+        <item>Microsecond</item>
+        <item>Millisecond (ms)</item>
+        <item>Second (s)</item>
+        <item>Minute (min)</item>
+        <item>Hour (h)</item>
+        <item>Day (d)</item>
+        <item>Week (wk)</item>
+        <item>Month (m)</item>
+        <item>Year (y)</item>
+    </string-array>
+
+
+    <string-array name="spinner_volume_items">
+        <item>Milliliter (mL)</item>
+        <item>Liter (L)</item>
+        <item>Cubic meter (m3)</item>
+        <item>Cubic inch (in3)</item>
+        <item>Cubic foot (ft3)</item>
+        <item>Cubic yard (yd3)</item>
+        <item>Fluid ounce - US (fl oz)</item>
+        <item>Fluid ounce - UK (fl oz)</item>
+        <item>Cup - US (c)</item>
+        <item>Cup (c)</item>
+        <item>Pint, liquid -US (pt)</item>
+        <item>Pint, liquid -UK (pt)</item>
+        <item>Quart, liquid - US (qt)</item>
+        <item>Quart, liquid - UK (qt)</item>
+        <item>Gallon – US (gal)</item>
+        <item>Gallon – UK (gal)</item>
+        <item>Oil Barrel (bbl)</item>
+
+    </string-array>
+    <string-array name="spinner_majors_country">
+        <item>USD</item>
+        <item>INR</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>CHF</item>
+        <item>AUD</item>
+        <item>CAD</item>
+    </string-array>
+    <string-array name="spinner_user_choose">
+        <item>Popular</item>
+        <item>All</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Asia</item>
+        <item>europe</item>
+        <item>Africa</item>
+        <item>Middle East</item>
+    </string-array>
+</resources>

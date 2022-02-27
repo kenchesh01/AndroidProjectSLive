@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading">30sp</dimen>
+    <dimen name="body">24sp</dimen>
+    <dimen name="quote">18sp</dimen>
+    <dimen name="margin">65dp</dimen>
+    <dimen name="icon">60dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="table_width">60dp</dimen>
+    <dimen name="table_height">40dp</dimen>
+</resources>

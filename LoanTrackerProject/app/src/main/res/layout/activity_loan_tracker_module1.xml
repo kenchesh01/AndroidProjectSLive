@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanTrackerModule1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="#ffffff"
+            ads:layout_constraintEnd_toEndOf="parent"
+
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/margin"
+        android:scrollbarStyle="insideOverlay"
+        ads:layout_constraintTop_toBottomOf="@id/ad_banner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/loan_tracker_summary"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TableLayout
+                android:id="@+id/Table"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/activity_label">
+
+                <TableRow
+                    android:id="@+id/row_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/heading_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill_vertical"
+                        android:text="@string/id"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/quote"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@+id/heading_2"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/heading_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/account_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/quote"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@id/heading_3"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_1" />
+
+                    <TextView
+                        android:id="@+id/heading_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/installmentAmount"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_2" />
+
+                    <TextView
+                        android:id="@+id/heading_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/due_date"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/quote"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_3" />
+                    <TextView
+                        android:id="@+id/heading_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/view"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_4" />
+                    <TextView
+                        android:id="@+id/heading_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/edit"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_5" />
+                    <TextView
+                        android:id="@+id/heading_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Delete"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_6" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/id1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/home_purchase_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/Name1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/id1" />
+                    <TextView
+                        android:id="@+id/LoanAmount1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Name1" />
+                    <TextView
+                        android:id="@+id/LoanTerm1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanAmount1" />
+
+                    <ImageView
+                        android:id="@+id/InstallmentDate1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="view"
+                        android:contentDescription="@string/view"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanTerm1" />
+
+                    <ImageView
+                        android:id="@+id/Edit1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="@string/edit"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="Edit1"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/InstallmentDate1" />
+
+                    <ImageView
+                        android:id="@+id/Delete1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="@string/Delete"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        ads:layout_constrainedWidth="false"
+                        android:onClick="Delete1"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/Edit1" />
+
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:id="@+id/row_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/id2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/home_purchase_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+                    <TextView
+                        android:id="@+id/Name2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/id2" />
+                    <TextView
+                        android:id="@+id/LoanAmount2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Name2" />
+                    <TextView
+                        android:id="@+id/LoanTerm2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanAmount2" />
+
+                    <ImageView
+                        android:id="@+id/InstallmentDate2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="view2"
+                        android:contentDescription="@string/view"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanTerm2" />
+                    <ImageView
+                        android:id="@+id/Edit2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Edit2"
+                        android:contentDescription="@string/edit"
+
+                        ads:layout_constraintStart_toEndOf="@+id/InstallmentDate2" />
+
+                    <ImageView
+                        android:id="@+id/Delete2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Delete2"
+                        android:contentDescription="@string/Delete"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Edit2" />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/id3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/home_purchase_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+                    <TextView
+                        android:id="@+id/Name3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/id2" />
+                    <TextView
+                        android:id="@+id/LoanAmount3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Name2" />
+                    <TextView
+                        android:id="@+id/LoanTerm3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanAmount2" />
+
+                    <ImageView
+                        android:id="@+id/InstallmentDate3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="view3"
+                        android:contentDescription="@string/view"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanTerm2" />
+                    <ImageView
+                        android:id="@+id/Edit3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Edit3"
+                        android:contentDescription="@string/edit"
+
+                        ads:layout_constraintStart_toEndOf="@+id/InstallmentDate2" />
+
+                    <ImageView
+                        android:id="@+id/Delete3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        android:contentDescription="@string/Delete"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Delete3"
+                        ads:layout_constraintStart_toEndOf="@+id/Edit2" />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/id4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/home_purchase_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+                    <TextView
+                        android:id="@+id/Name4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/id2" />
+                    <TextView
+                        android:id="@+id/LoanAmount4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Name2" />
+                    <TextView
+                        android:id="@+id/LoanTerm4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanAmount2" />
+
+                    <ImageView
+                        android:id="@+id/InstallmentDate4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:contentDescription="@string/installmentAmount"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="view4"
+                        ads:layout_constraintStart_toEndOf="@+id/LoanTerm2" />
+                    <ImageView
+                        android:id="@+id/Edit4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        android:contentDescription="@string/edit"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Edit4"
+                        ads:layout_constraintStart_toEndOf="@+id/InstallmentDate2" />
+
+                    <ImageView
+                        android:id="@+id/Delete4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Delete4"
+                        ads:layout_constraintStart_toEndOf="@+id/Edit2"
+                        android:contentDescription="@string/Delete" />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/id5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/home_purchase_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+                    <TextView
+                        android:id="@+id/Name5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/id2" />
+                    <TextView
+                        android:id="@+id/LoanAmount5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/Name2" />
+                    <TextView
+                        android:id="@+id/LoanTerm5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/LoanAmount2" />
+
+                    <ImageView
+                        android:id="@+id/InstallmentDate5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="view5"
+                        ads:layout_constraintStart_toEndOf="@+id/LoanTerm2"
+                        android:contentDescription="@string/installmentAmount" />
+                    <ImageView
+                        android:id="@+id/Edit5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Edit5"
+                        ads:layout_constraintStart_toEndOf="@+id/InstallmentDate2"
+                        android:contentDescription="@string/edit" />
+
+                    <ImageView
+                        android:id="@+id/Delete5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        android:onClick="Delete5"
+                        ads:layout_constraintStart_toEndOf="@+id/Edit2"
+                        android:contentDescription="@string/Delete"
+                        />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" />
+
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/add_loan"
+                android:textAllCaps="false"
+                android:onClick="AddLoan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body"
+                ads:backgroundTint="@color/colorPrimary"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/Table" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.transposesolutions.bankingcalculator">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankingCalculator">
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.ca-app-pub-3940256099942544~3347511713"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".Currency"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/currency_converter"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoanModule5"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_loan"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoanModule4"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_loan"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoanModule3"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_loan"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoanModule2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_loan"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoanModule1"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_loan"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ReturnModule2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_investment"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ReturnModule1"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_investment"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SavingsModule5"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_savings"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SavingsModule4"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_savings"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SavingsModule3"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_savings"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SavingsModule2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_savings"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SavingsModule1"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_savings"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GoalModule5"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_goal"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GoalModule4"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_goal"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GoalModule3"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_goal"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GoalModule2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_goal"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GoalModule1"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_goal"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DepositModule5"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_CD"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DepositModule4"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_CD"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DepositModule3"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_CD"
+            android:screenOrientation="fullSensor"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DepositModule2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_CD"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DepositModule1"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/calculator_CD"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

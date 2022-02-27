@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Currency">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:layout_centerHorizontal="true"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/margin"
+        ads:layout_constraintTop_toBottomOf="@id/ad_banner"
+        android:scrollbarStyle="insideOverlay">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/convertFromTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert_from"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/convertToTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/convertToTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/convert_to"
+                android:gravity="center"
+                android:textSize="@dimen/body"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/convertFromTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"  />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/convert_from_dropdown_menu"
+                android:layout_marginTop="4dp"
+                                android:background="@drawable/custom_input"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/convert_to_dropdown_menu"
+                app:layout_constraintTop_toBottomOf="@+id/convertFromTitle"   />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/convert_to_dropdown_menu"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                app:drawableRightCompat="@drawable/ic_drop_down"
+                android:background="@drawable/custom_input"
+                app:layout_constraintStart_toEndOf="@+id/convert_from_dropdown_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/convertToTitle"
+                android:layout_marginStart="4dp" />
+
+
+
+
+            <EditText
+                android:id="@+id/amountConvertEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/body"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="@string/enter_amount"
+                android:background="@drawable/custom_input"
+                app:drawableRightCompat="@drawable/ic_pen"
+                app:layout_constraintStart_toStartOf="@+id/convert_from_dropdown_menu"
+                app:layout_constraintEnd_toEndOf="@id/convert_from_dropdown_menu"
+                app:layout_constraintTop_toBottomOf="@+id/convert_from_dropdown_menu"
+                android:autofillHints="" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/conversionResult"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/body"
+                android:background="#e7e7e7"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/convert_to_dropdown_menu"
+                app:layout_constraintEnd_toEndOf="@id/convert_to_dropdown_menu"
+                app:layout_constraintTop_toBottomOf="@+id/convert_to_dropdown_menu" />
+
+            <TextView
+                android:id="@+id/tableHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/major_currencies"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/heading"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/conversionResult"  />
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/tableHeader">
+
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_eur" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textStyle="bold"
+                        android:text="@string/usd_eur"
+                        android:gravity="center"
+                        android:textSize="@dimen/body"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"       />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/euro"
+                        android:contentDescription="@string/usd_eur" />
+
+                    <TextView
+                        android:id="@+id/Result_1"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"          />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@color/light_green"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_jpy" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:text="@string/usd_jpy"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/body"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"     />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/japan"
+                        android:contentDescription="@string/usd_jpy" />
+                    <TextView
+                        android:id="@+id/Result_2"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"   />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_gbp" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/usd_gbp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/gbp"
+                        android:contentDescription="@string/usd_gbp" />
+                    <TextView
+                        android:id="@+id/Result_3"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"    />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:background="@color/light_green"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_cad" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/usd_cad"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/canada"
+                        android:contentDescription="@string/usd_cad" />
+                    <TextView
+                        android:id="@+id/Result_4"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"      />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_cny" />
+
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/usd_cny"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/china_cny"
+                        android:contentDescription="@string/usd_cny" />
+
+                    <TextView
+                        android:id="@+id/Result_5"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"      />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_green">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_aud" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:text="@string/usd_aud"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:layout_weight="1"  />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/australia"
+                        android:contentDescription="@string/usd_aud" />
+                    <TextView
+                        android:id="@+id/Result_6"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"  />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_hkd" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/usd_hkd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/hongkong_hkd"
+                        android:contentDescription="@string/usd_hkd" />
+                    <TextView
+                        android:id="@+id/Result_7"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"   />
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_green">
+
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_inr" />
+
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:text="@string/usd_inr"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/body"
+                        android:layout_weight="1"     />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/india"
+                        android:contentDescription="@string/usd_inr" />
+                    <TextView
+                        android:id="@+id/Result_8"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"   />
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_rub" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:text="@string/usd_rub"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/body"
+                        android:layout_weight="1"    />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/rub_russia"
+                        android:contentDescription="@string/usd_rub" />
+                    <TextView
+                        android:id="@+id/Result_9"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:textSize="@dimen/body"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"     />
+                </TableRow>
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_green">
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/usd"
+                        android:contentDescription="@string/usd_krw" />
+                    <TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:text="@string/usd_krw"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/body"
+                        android:layout_weight="1"    />
+                    <ImageView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:layout_weight="1"
+                        android:src="@drawable/south_korea_krw"
+                        android:contentDescription="@string/usd_krw" />
+                    <TextView
+                        android:id="@+id/Result_10"
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="@dimen/table_height"
+                        android:gravity="center"
+                        android:textSize="@dimen/body"
+                        android:textColor="@color/black"
+                        android:layout_weight="1" />
+                </TableRow>
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

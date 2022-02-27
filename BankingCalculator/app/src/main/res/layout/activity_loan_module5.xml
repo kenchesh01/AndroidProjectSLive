@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanModule5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="#ffffff"
+            ads:layout_constraintEnd_toEndOf="parent"
+
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/margin"
+        android:scrollbarStyle="insideOverlay"
+        ads:layout_constraintTop_toBottomOf="@id/ad_banner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/your_comparative_result"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/Table"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toBottomOf="@id/activity_label">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/heading_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="fill_vertical"
+                        android:text="@string/description"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@+id/heading_2"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/heading_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/result_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constraintEnd_toStartOf="@id/heading_3"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_1" />
+
+                    <TextView
+                        android:id="@+id/heading_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/result_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/heading_2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_label1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/loan_amount_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/loan_amount_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/loan_amount_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_1" />
+
+                    <TextView
+                        android:id="@+id/loan_amount_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/loan_amount_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_label2"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/loan_term_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/loan_term_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/loan_term_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_2" />
+
+                    <TextView
+                        android:id="@+id/loan_term_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/loan_term_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_label3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/rate_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/rate_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/rate_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_3" />
+
+                    <TextView
+                        android:id="@+id/rate_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/rate_result1" />
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" />
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/loan_activity_label"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_result_label1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/monthly_payment_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/monthly_payment_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/monthly_payment_result2"
+                        ads:layout_constraintStart_toEndOf="@+id/label_5" />
+
+                    <TextView
+                        android:id="@+id/monthly_payment_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+                        ads:layout_constraintStart_toEndOf="@+id/monthly_payment_result1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_result_label2"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/loan_principal_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/loan_principal_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/loan_principal_result2"
+
+                        ads:layout_constraintStart_toEndOf="@+id/label_6" />
+
+                    <TextView
+                        android:id="@+id/loan_principal_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/loan_principal_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_result_label3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/total_interest_result1"
+
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/total_interest_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/total_interest_result2"
+
+                        ads:layout_constraintStart_toEndOf="@+id/label_7" />
+
+                    <TextView
+                        android:id="@+id/total_interest_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/total_interest_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#cae7c1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/label_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loan_result_label4"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@+id/total_payments_result1"
+                        ads:layout_constraintHorizontal_chainStyle="spread_inside"
+                        ads:layout_constraintStart_toStartOf="@id/Table" />
+
+                    <TextView
+                        android:id="@+id/total_payments_result1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constraintEnd_toStartOf="@id/total_payments_result2"
+
+                        ads:layout_constraintStart_toEndOf="@+id/label_8" />
+
+                    <TextView
+                        android:id="@+id/total_payments_result2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/quote"
+                        ads:layout_constrainedWidth="false"
+                        ads:layout_constraintEnd_toEndOf="@id/Table"
+
+                        ads:layout_constraintStart_toEndOf="@+id/total_payments_result1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp" />
+            </TableLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <item name="colorPrimaryVariant">@color/dark_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="backgroundColor">@color/light_green</item>
+        <item name="spinnerBorderColor">@color/dark_green</item>
+        <item name="mainBorder">@color/light_green</item>
+        <item name="text_color">@color/black</item>
+        <item name="tableRowBackgroundColor1">@color/white</item>
+        <item name="tableRowBackgroundColor2">@color/light_green</item>
+        <item name="tableRowTextColor">@color/black</item>
+        <item name="tableRowTextColor2">@color/black</item>
+    </style>
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor_blue</item>
+        <item name="colorPrimaryVariant">@color/primaryColorDark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="backgroundColor">@color/lightBlue</item>
+        <item name="spinnerBorderColor">@color/primaryColor_blue</item>
+        <item name="mainBorder">@color/lightBlue</item>
+        <item name="text_color">@color/black</item>
+        <item name="tableRowBackgroundColor1">@color/white</item>
+        <item name="tableRowBackgroundColor2">@color/lightBlue</item>
+        <item name="tableRowTextColor">@color/black</item>
+        <item name="tableRowTextColor2">@color/black</item>
+
+    </style>
+    <style name="AppTheme_Black" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/lightDark</item>
+        <item name="colorPrimaryVariant">@color/lightDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="backgroundColor">@color/lightDark</item>
+        <item name="spinnerBorderColor">@color/lightDark</item>
+        <item name="mainBorder">@color/lightDark</item>
+        <item name="text_color">@color/white</item>
+        <item name="tableRowBackgroundColor1">@color/white</item>
+        <item name="tableRowBackgroundColor2">@color/lightDark</item>
+        <item name="tableRowTextColor">@color/black</item>
+        <item name="tableRowTextColor2">@color/white</item>
+
+    </style>
+    <style name="AppTheme.Brown" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/brown</item>
+        <item name="colorPrimaryVariant">@color/brown</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="backgroundColor">@color/light_brown</item>
+        <item name="spinnerBorderColor">@color/brown</item>
+        <item name="mainBorder">@color/light_brown</item>
+        <item name="text_color">@color/white</item>
+        <item name="tableRowBackgroundColor1">@color/white</item>
+        <item name="tableRowBackgroundColor2">@color/light_brown</item>
+        <item name="tableRowTextColor">@color/black</item>
+        <item name="tableRowTextColor2">@color/white</item>
+
+    </style>
+    <style name="AppTheme.Gray" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryVariant">@color/grey</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="backgroundColor">@color/light_gray</item>
+        <item name="spinnerBorderColor">@color/grey</item>
+        <item name="mainBorder">@color/light_gray</item>
+        <item name="text_color">@color/black</item>
+        <item name="tableRowBackgroundColor1">@color/white</item>
+        <item name="tableRowBackgroundColor2">@color/light_gray</item>
+        <item name="tableRowTextColor">@color/black</item>
+        <item name="tableRowTextColor2">@color/black</item>
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    <style name="SplashTheme" parent ="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screenbackground</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

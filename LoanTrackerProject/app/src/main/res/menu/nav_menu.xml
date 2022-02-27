@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_mortgage"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/nav_mortgage"
+            android:icon="@drawable/ic_mortgage_calculator"
+            android:title="@string/mortgage_button" />
+        <item
+            android:id="@+id/nav_mortgage_payment"
+            android:icon="@drawable/ic_mortgage_payment_calculator"
+            android:title="@string/mortgage_payment_button" />
+        <item
+            android:id="@+id/nav_rental"
+            android:icon="@drawable/ic_rental_calculator"
+            android:title="@string/rental_property_button" />
+
+        <item
+            android:id="@+id/nav_auto"
+            android:icon="@drawable/ic_auto"
+            android:title="@string/auto_button" />
+
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/ic_personal"
+            android:title="@string/personal_button" />
+        <item
+            android:id="@+id/nav_card"
+            android:icon="@drawable/ic_card"
+            android:title="@string/card_button" />
+    </group>
+    <item android:title="@string/label_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rating"
+                android:title="@string/rate" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/refer" />
+
+            <item android:id="@+id/nav_apps"
+                android:icon="@drawable/ic_more"
+                android:title="@string/more"/>
+        </menu>
+    </item>
+
+</menu>

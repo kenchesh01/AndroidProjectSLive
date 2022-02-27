@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">Loan Tracker Project</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="label_mortgage">Mortgage Loan</string>
+    <string name="label_mortgage_payment_calculator">Mortgage Payment</string>
+    <string name="label_rental_property_calculator">Rental Property</string>
+    <string name="label_auto">Auto </string>
+    <string name="label_personal">Personal </string>
+    <string name="label_card">Card </string>
+    <string name="mortgage_button">Mortgage Calculator</string>
+    <string name="mortgage_payment_button">Mortgage Payment Calculator</string>
+    <string name="rental_property_button">Rental Property Calculator</string>
+    <string name="auto_button">Auto Loan Calculator</string>
+    <string name="personal_button">Personal Loan Calculator</string>
+    <string name="card_button">Credit Card Balance Payoff Calculator</string>
+    <string name="label_communicate">Communicate</string>
+    <string name="label_store">In-app products</string>
+    <string name="rate">Rate this app</string>
+    <string name="refer">Refer this app</string>
+    <string name="more">More apps from us</string>
+    <string name="purchase">Buy the app (Remove Ads) </string>
+    <string name="amortization_schedule">Amortization Schedule</string>
+    <string name="label_information">Key in your information:</string>
+    <string name="label_input">Your Input:</string>
+    <string name="label_loan_info">Key in your loan info:</string>
+    <string name="label_card_info">Key in your card info:</string>
+    <string name="result_activity_label">Estimated Loan Payment:</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_save">Save</string>
+    <string name="button_share">Share</string>
+    <string name="button_compare">Compare</string>
+    <string name="button_amortization">Amortization</string>
+    <string name="hint">Enter Numeric Value</string>
+    <string name="your_comparative_result">Your Comparative Results</string>
+    <string name="description">Description</string>
+    <string name="result_1">Result#1</string>
+    <string name="result_2">Result#2</string>
+    <string name="monthly">Monthly</string>
+    <string name="annual">Annual</string>
+    <string name="loan_term">Loan Term</string>
+    <!-- UI Resource for Main Activity - Launcher Screen -->
+    <string name="app_message_title">Know your Loan?</string>
+    <string name="app_message">Select a calculator from below to estimate - Monthly Payment, Interest Payment and Amortization Schedule:</string>
+
+    <!-- UI Resource for Mortgage Module -->
+    <string name="mortgage_label1">Home Purchase Price</string>
+    <string name="mortgage_label2">Down Payment (%)</string>
+    <string name="mortgage_label3">Mortgage Term (Yrs)</string>
+    <string name="mortgage_label4">Rate of Interest (%)</string>
+    <string name="mortgage_activity_label">Estimated Mortgage Payments</string>
+    <string name="mortgage_result_label1">Monthly Payment</string>
+    <string name="mortgage_result_label2">Own Contribution</string>
+    <string name="mortgage_result_label3">Mortgage Amount</string>
+    <string name="mortgage_result_label4">Total Interest Paid</string>
+    <string name="mortgage_result_label5">Total Loan Payments</string>
+    <string name="label_mortgage_compare">Add another mortgage</string>
+
+    <!-- UI Resource for Loan tracker Module -->
+    <string name="loan_label">Add A Loan</string>
+    <string name="loan_label1">Account Name</string>
+    <string name="loan_label2">Loan Amount</string>
+    <string name="loan_label3">Loan Term (Months)</string>
+    <string name="loan_label4">Loan Rate</string>
+    <string name="loan_label5">Monthly Payment</string>
+    <string name="loan_label6">First Instalment Date</string>
+    <!-- UI Resource for Rental Property Module -->
+    <string name="property_activity_label1">Purchase Information</string>
+    <string name="property_label1">Home Price</string>
+    <string name="property_label2">Property Financed? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="property_label3">Down Payment (%)</string>
+    <string name="property_label4">Mortgage Term (Yrs)</string>
+    <string name="property_label5">Rate of Interest (%)</string>
+    <string name="property_label6">Closing Cost</string>
+    <string name="property_label7">Need Repairs?</string>
+    <string name="property_label8">Repair Cost</string>
+    <string name="property_activity_label2">Recurring Operating Expense</string>
+    <string name="property_label9">Annual Property Tax</string>
+    <string name="property_label10">Annual Home Insurance</string>
+    <string name="property_label11">HOA Fee (Monthly)</string>
+    <string name="property_label12">Maintenance Expense (Monthly)</string>
+    <string name="property_label13">Other Expense (Monthly)</string>
+    <string name="property_activity_label3">Rental Income</string>
+    <string name="property_label14">Rental Income (Monthly)</string>
+    <string name="property_label15">Annual Vacancy Rate (%)</string>
+    <string name="property_label16">Other Income (Monthly)</string>
+    <string name="property_activity_label4">Future Value</string>
+    <string name="property_label17">Annual Increase in Rental Income (%)</string>
+    <string name="property_label18">Annual Increase in Operational Expense (%)</string>
+    <string name="property_label19">Holding Length (Years)</string>
+
+    <!--> Text Values <!- -->
+    <string name="text_closing_cost">5000</string>
+    <string name="text_repair_cost">0</string>
+    <string name="text_price">500000</string>
+    <string name="text_down_payment">0</string>
+    <string name="text_interest_rate">0</string>
+    <string name="text_loan_term">0</string>
+    <string name="text_property_tax">6000</string>
+    <string name="text_property_insurance">1200</string>
+    <string name="text_mortgage_insurance">0</string>
+    <string name="text_HOA_fee">0</string>
+    <string name="text_maintenance">100</string>
+    <string name="text_miscellaneous_expense">0</string>
+    <string name="text_other_expense">0</string>
+    <string name="text_rent">2000</string>
+    <string name="text_vacancy">5</string>
+    <string name="text_other_income">0</string>
+    <string name="text_rent_increase">2</string>
+    <string name="text_expense_increase">2</string>
+    <string name="text_property_holding">20</string>
+
+    <!--> Result Activity Values <!- -->
+    <string name="rental_activity_label">Return on Rental Property</string>
+    <string name="property_result_activity_label1">Income &amp; Cash Flow for Year 1</string>
+    <string name="property_result_label1">Annual Income</string>
+    <string name="property_result_label2">Less: Vacancy</string>
+    <string name="property_result_label3">Other Income</string>
+    <string name="property_result_label4">Operating Expense</string>
+    <string name="property_result_label5">Net Operating Income</string>
+    <string name="property_result_label6">Mortgage Payments</string>
+    <string name="property_result_label7">Before Tax Cash Flow</string>
+    <string name="property_result_activity_label2">Key Operating Ratios for Year 1</string>
+    <string name="property_result_label8">Up-Front Cash Invested</string>
+    <string name="property_result_label9">Capitalization Rate</string>
+    <string name="property_result_label10">Cash Flow ROI</string>
+    <string name="property_result_label11">Gross Rent Multiplier</string>
+    <string name="property_result_label12">Net Income Multiplier</string>
+
+    <!-- UI Resource for Mortgage Payment Calculator Module -->
+    <string name="mortgage_payment_label1">Mortgage Amount</string>
+    <string name="mortgage_payment_label2">Mortgage Term (Yrs)</string>
+    <string name="mortgage_payment_label3">Rate of Interest (%)</string>
+    <string name="mortgage_payment_label4">Advance Option?</string>
+    <string name="mortgage_payment_label5">Annual Property Tax</string>
+    <string name="mortgage_payment_label6">Annual Home Insurance</string>
+    <string name="mortgage_payment_label7">HOA Fee (Monthly)</string>
+    <string name="mortgage_payment_label8">Mortgage Insurance (Monthly)</string>
+    <!--> Text Values <!- -->
+    <string name="mortgage_text_price">1000000</string>
+    <string name="mortgage_text_interest_rate">4</string>
+    <string name="mortgage_text_loan_term">5</string>
+    <string name="mortgage_text_property_tax">6000</string>
+    <string name="mortgage_text_property_insurance">1200</string>
+    <string name="mortgage_text_HOA_fee">150</string>
+    <string name="mortgage_text_mortgage_insurance">200</string>
+    <!--> Result Activity Values <!- -->
+    <string name="mortgage_payment_result_activity_label1">Cash Outflow For Year 1 </string>
+    <string name="mortgage_payment_result_label1">Mortgage Payment</string>
+    <string name="mortgage_payment_result_label2">Property Tax</string>
+    <string name="mortgage_payment_result_label3">Home Insurance</string>
+    <string name="mortgage_payment_result_label4">HOA Fees</string>
+    <string name="mortgage_payment_result_label5">Mortgage Insurance</string>
+    <string name="mortgage_payment_result_label6">Total Payments</string>
+    <string name="mortgage_payment_result_activity_label2">Mortgage Summary</string>
+    <string name="mortgage_payment_result_label7">Total Mortgage Payments</string>
+    <string name="mortgage_payment_result_label8">Total Principal Paid</string>
+    <string name="mortgage_payment_result_label9">Total Interest Paid</string>
+
+    <!-- UI Resource for Auto Module -->
+    <string name="auto_label1">Vehicle Purchase Price</string>
+    <string name="auto_label2">Down Payment (%)</string>
+    <string name="auto_label3">Loan Term (Months)</string>
+    <string name="auto_label4">Rate of Interest (%)</string>
+    <string name="auto_activity_label">Estimated Auto Loan Payments</string>
+    <string name="auto_result_label1">Monthly Payment</string>
+    <string name="auto_result_label2">Own Contribution</string>
+    <string name="auto_result_label3">Loan Amount</string>
+    <string name="auto_result_label4">Total Interest Paid</string>
+    <string name="auto_result_label5">Total Loan Payments</string>
+    <string name="label_auto_compare">Add another auto loan</string>
+
+    <!-- UI Resource for Personal Module -->
+    <string name="personal_label1">Loan Amount</string>
+    <string name="personal_label2">Loan Term (Months)</string>
+    <string name="personal_label3">Rate of Interest (%)</string>
+    <string name="personal_activity_label">Estimated Personal Loan Payments</string>
+    <string name="personal_result_label1">Monthly Payment</string>
+    <string name="personal_result_label2">Total Principal Paid</string>
+    <string name="personal_result_label3">Total Interest Paid</string>
+    <string name="personal_result_label4">Total Loan Payments</string>
+    <string name="label_personal_compare">Add another personal loan</string>
+
+    <!-- UI Resource for Card Module -->
+    <string name="card_label1">Credit Card Balance</string>
+    <string name="card_label2">Rate of Interest (%)</string>
+    <string name="card_label3">Desired Months to Payoff the Balance</string>
+    <string name="card_activity_label">Estimated Balance Payoff </string>
+    <string name="card_result_label1">Monthly Payment</string>
+    <string name="card_result_label2">Total Principal Paid</string>
+    <string name="card_result_label3">Total Interest Paid</string>
+    <string name="card_result_label4">Total Payments</string>
+    <string name="label_card_compare">Add another card balance</string>
+
+
+    <string name="rental_module1">Rental Module1</string>
+    <string name="calculator_2">Calculator 2</string>
+    <string name="calculator_3">Calculator 3</string>
+    <string name="calculator_4">Calculator 4</string>
+    <string name="rental_property_calculator">Rental Property Calculator</string>
+    <string name="key_in_your_information">Key in your information:</string>
+    <string name="rental_calculator">Rental Calculator</string>
+
+    <string name="purchase_price">Purchase Price</string>
+    <string name="property_financed">Property Financed? </string>
+
+    <string name="recurring_operating_expense">Recurring Operating Expense</string>
+    <string name="income">Income</string>
+    <string name="future_value">Future Value</string>
+
+
+    <string name="down_payment">Down Payment(%)</string>
+    <string name="interest_rate">Interest Rate(%)</string>
+    <string name="long_term_months">Long Term(Months)</string>
+    <string name="closing_cost">Closing Cost</string>
+    <string name="annual_property_tax">Annual Property Tax</string>
+    <string name="repair_cost">Repair Cost</string>
+    <string name="annual_insurance_cost">Annual Insurance Cost</string>
+    <string name="monthly_hoa_fee">Monthly HOA Fee</string>
+    <string name="monthly_maintenance_coast">Monthly Maintenance Coast</string>
+    <string name="other_monthly_expense">Other Monthly Expense</string>
+    <string name="monthly_maintenance_cost">Monthly Maintenance Cost</string>
+    <string name="monthly_rental_income">Monthly Rental Income</string>
+    <string name="other_monthly_income">Other Monthly Income</string>
+    <string name="annual_vacancy_rate">Annual Vacancy Rate(%)</string>
+    <string name="annual_management_fee">Annual Management Fee (%)</string>
+    <string name="annual_appreciation_value">Annual Appreciation Value (%)</string>
+    <string name="need_repairs">Need Repairs?</string>
+
+
+    <string name="holding_length_months">Holding Length (Months)</string>
+    <string name="cost_of_sale">Cost of Sale</string>
+    <string name="rental_result">Rental Result</string>
+
+    <string name="capitalization_rate">Captilization Rate</string>
+    <string name="annual_income">Annual Income</string>
+    <string name="loss_of_income">Loss of Income</string>
+    <string name="operating_expense">Operating Expense</string>
+    <string name="net_operating_income_noi">Net Operating Income(NOI)</string>
+    <string name="cost_of_property">Cost of Property</string>
+    <string name="chart_view">ChartView</string>
+
+
+    <!-- UI Resource for Ad mob Banner ID -->
+    <!-- -
+   This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+   test ad unit ID for Android banners:
+   Google Banner ID: ca-app-pub-3940256099942544/6300978111
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!-- -
+    Google Test ID: ca-app-pub-3940256099942544/1033173712
+    <!- -->
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="label_payment_break">Total Loan Payments</string>
+    <string name="label_principal">Principal</string>
+    <string name="label_interest">Interest</string>
+    <string name="DatePicker">Select Date...</string>
+    <string name="submit">Submit</string>
+    <string name="Saved_result">Saved Result</string>
+    <string name="display_data">Display Data</string>
+    <string name="button_delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="search">id</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">Id</string>
+    <string name="add_loan">Add Loan</string>
+    <string name="view">view</string>
+    <string name="Delete">Delete</string>
+    <string name="account_name">Account Name</string>
+    <string name="installmentAmount">InstallmentAmount</string>
+    <string name="due_date">DueDate</string>
+    <string name="edit">Edit</string>
+    <string name="loan_tracker_summary">Loan Tracker Summary</string>
+    <string name="loan_details">Loan Details</string>
+    <string name="loan_tracker">Loan Tracker!</string>
+    <string name="enter_name_here">Enter name here</string>
+    <string name="test_data">test data</string>
+    <string name="current_date">Current Date</string>
+    <string name="installment_last_due_date">Installment Last Due Date</string>
+    <string name="new_design">New Design</string>
+    <string name="enter_numerical_values">Enter numerical values</string>
+</resources>
